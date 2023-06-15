@@ -1,0 +1,864 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: teko;
+}
+
+html,body{
+    width: 100%;
+}
+
+#main{
+    width: 100%;
+    overflow: hidden;
+    background-color: #eeeeee;
+}
+
+#one{
+    width: 100%;
+    height: 25vw;
+    background-color: #eeeeee;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#babylone{
+    height: 15.5vw;
+    width: 100%;
+    padding-left: 3vw;
+}
+
+/* #babylone #abc{
+    background-color: red;
+    width: 70vw;
+    margin-right: 8vw;
+} */
+
+#babylone span{
+    font-size: 13vw;
+    text-transform: uppercase;
+    font-family: teko;
+    font-weight: normal;
+    color: #000921;
+    display: inline-block;
+}
+
+#header{
+    width: 100%;
+    height: 50%;
+    z-index: 99;
+}
+
+#nav{
+    height: 5.5vw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.sticky{
+    position: fixed;
+    width: 100% ;
+}
+
+#innernav{
+    width: 94%;
+    height: 85%;
+    background-color: #d29380;
+    border: #1a1a2c solid 0.1vw;
+    z-index: 3;
+}
+
+#anchors{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 2vw;
+}
+
+#anchors::after{
+    content: "";
+    position: relative;
+    height: 30%;
+    width: 3%;
+    border-radius: 50%;
+    background-color: #eeeeee;
+    top: 7%;
+    left: 110%;
+    border: solid 1px #000921;
+}
+
+#innernav span{
+    text-transform: uppercase;
+    font-size: 2.5vw;
+    color: #000921;
+}
+
+#innernav a{
+    text-decoration: none;
+    color: #000921;
+    font-size: 1.3vw;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+#innernav a::after{
+    position: absolute;
+    top: 85%;
+    left: 0%;
+    content: "";
+    width: 0%;
+    height: 0.15vw;
+    background-color: #000;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+}
+
+#innernav a:hover:after{
+    width: 100%;
+} 
+
+#nav::after{
+    content: "";
+    position: relative;
+    transform: translate(-50%,-50%);
+    left: 46.5%;
+    top: 2%;
+    width: 93%;
+    height: 15%;
+    z-index: 1;
+    background-color: #d29380;
+    border: #1a1a2c solid 0.1vw;
+}
+
+#two{
+    width: 100%;
+    height: 50vw;
+    background-color: #eeeeee;
+    border-bottom: #1a1a2c solid 0.15vw;
+    border-top: #1a1a2c solid 0.15vw;
+    display: flex;
+    justify-content: center;
+}
+
+#tleft{
+    height: 100%;
+    width: 64%;
+    border-left: #1a1a2c solid 0.15vw;
+    border-right: #1a1a2c solid 0.15vw;
+
+}
+
+#tleft h1{
+    font-size: 7.5vw;
+    color: #d29380;
+    line-height: 7vw;
+    padding: 4vw 2.5vw;
+}
+
+#tright{
+    height: 100%;
+    width: 30%;
+    border-right: #1a1a2c solid 0.15vw;
+}
+
+#tr1{
+    width: 100%;
+    height: 30%;
+    border-bottom: solid 0.15vw #1a1a2c ;
+    position: relative;
+}
+
+#tr1 img{
+    height: 93%;
+    width: 97%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+}
+
+#tr11{
+    height: 100%;
+    width: 50%;
+    border-right: #1a1a2c solid 0.15vw;
+}
+
+#tr2{
+    width: 100%;
+    height: 70%;
+    position: relative;
+}
+
+#tr2 p{
+    font-size: 1.5vw;
+    padding-top: 2vw;
+    padding-left: 2.5vw;
+    padding-right: 5vw;
+    line-height: 2vw;
+}
+
+.home__intro__rocket{
+    position: absolute;
+    top: 87%;
+    left: 90%;
+    
+}
+
+#three{
+    width: 100%;
+    height: 120vw;
+    background-color: #eeeeee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tbox{
+    width: 94%;
+    height: 50vw;
+    background-color: #a49780;
+    margin-top: 5vw ;
+    border: #1a1a2c solid 0.1vw;
+    z-index: 9;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#three::after{
+    content: "";
+    height: 10vw;
+    width: 93%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 125.8vw;
+    left: 50%;
+    background-color: #a49780;
+    border: #1a1a2c solid 0.1vw;
+    z-index: 0;
+}
+
+#three::before{
+    content: "";
+    height: 10vw;
+    width: 92%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 126.4vw;
+    left: 50%;
+    background-color: #a49780;
+    border: #1a1a2c solid 0.1vw;
+    z-index: 0;
+}
+
+#circle1{
+    height: 2vw;
+    width: 2vw;
+    background-color: #eeeeee;
+    border-radius: 50%;
+    border: #1a1a2c solid 0.1vw;    
+    position: relative;
+    top: -12vw;
+    left: 2%;
+}
+
+#circle2{
+    height: 2vw;
+    width: 2vw;
+    background-color: #eeeeee;
+    border-radius: 50%;
+    border: #1a1a2c solid 0.1vw;    
+    position: relative;
+    top: -14vw;
+    left: 96%;
+}
+
+#tbtext{
+    width: 100%;
+    height: 27vw;
+    display: flex;
+    padding: 0 2vw;
+    align-items: flex-end;
+}
+
+#tbtext1{
+    height: 79%;
+    width: 20%;
+    margin-bottom: 2vw;
+    margin-left: 1vw;
+    border: #1a1a2c solid 0.1vw;
+}
+
+#img{
+    height: 100%;
+    width: 100%;
+    background-image: url(https://babylone.fr/wp-content/uploads/2022/06/babylone-agency-founder-1.jpg);
+    background-size: cover;
+}
+
+#img svg{
+    position: relative;
+    left: 81%;
+    top: -0.1vw;
+    z-index: 1;
+    height: 4vw;
+}
+
+#tbtext2{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    text-align: right;
+    align-items: flex-end;
+    padding: 1vw 2vw;
+    color: #000921;
+}
+
+#tbtext2 #h1{
+    height: 50vw;
+    width: 230vw;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: relative;
+    z-index: 99;
+    top: 122%;
+}
+
+#tbtext2 span{
+    font-size: 13vw;
+    line-height: 10vw;
+    display: inline-block;
+}
+
+#tbtext2 p{
+    font-size: 1.5vw;
+    line-height: 1.5vw;
+    padding: 1vw;
+    margin-left: 3vw;
+}
+
+#tbbottom{
+    width: 100%;
+    height: 5.5vw;
+    border-top: #1a1a2c solid 0.1vw;
+    background-color: #a49780;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#tbbottom h1{
+    font-size: 1.5vw; 
+    text-transform: uppercase;
+    color: #1a1a2c;
+    margin-right:2.5vw ;
+    animation-name: scroll;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    /* animation-play-state: running; */
+}  
+
+#tbbottom i{
+    margin-right: 2.1vw;
+    font-size: 1.2vw;
+}
+
+#tbbottom::-webkit-scrollbar{
+    display: none;
+}
+
+#tbbottom:hover{
+    background-color: #1a1a2c;
+    cursor: pointer;
+}
+
+#tbbottom:hover h1{
+    color: #fff;
+    animation-play-state: paused;
+}
+
+@keyframes scroll{
+    100%{
+        transform: translateX(0);
+    }
+    0%{
+        transform: translateX(calc(-100% - 100px));
+    }
+}
+
+#ttext{
+    width: 94%;
+    height: 30vw;
+    margin-top: 5vw;
+    color: #000921;
+}
+
+#ttext span{
+    font-size: 13vw;
+    display: inline-block;
+}
+
+#ttext #r{
+    margin-left: 3vw;
+} 
+
+#ttext p{
+    font-size: 1.5vw;
+    margin-right: 60vw;
+    margin-top: -3vw;
+}
+
+#tlinebox{
+    width: 100%;
+    height: 30vw;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+.box{
+    height: 13vw;
+    width: 13vw;
+    margin: 1vw;
+    display: inline-block;
+    border: #000 solid 0.1vw;
+}
+
+#tlinebox::-webkit-scrollbar{
+    display: none;
+}
+
+#box1{
+    background-image: url(https://babylone.fr/wp-content/uploads/2022/06/AMEX.png);
+    background-size: cover;
+    position: relative;
+    top: 5vw;
+}
+
+#box2{
+    background-image: url(https://babylone.fr/wp-content/uploads/2022/06/LECLERC.png);
+    background-size: cover;
+    position: relative;
+    top: 9vw;
+}
+
+#box3{
+    background-image: url(https://babylone.fr/wp-content/uploads/2022/06/COFIDIS.png);
+    background-size: cover;
+    position: relative;
+    top: 5vw;
+}
+
+#box4{
+    background-image: url(https://babylone.fr/wp-content/uploads/2022/06/LES-FURETS.png);
+    background-size: cover;
+    position: relative;
+    top: 7vw;
+}
+
+#box5{
+    background-image: url(https://babylone.fr/wp-content/uploads/2022/06/SANOFI.png);
+    background-size: cover;
+    position: relative;
+    top: 5.5vw;
+}
+
+#box6{
+    background-image: url(https://babylone.fr/wp-content/uploads/2022/06/SER.png);
+    background-size: cover;
+    position: relative;
+    top: 11vw;
+}
+
+#box7{
+    background-image: url(https://babylone.fr/wp-content/uploads/2022/06/SpF.png);
+    background-size: cover;
+    position: relative;
+    top: 8.5vw;
+}
+
+#box8{
+    background-image: url(https://babylone.fr/wp-content/uploads/2022/06/UNAM.png);
+    background-size: cover;
+    position: relative;
+    top: 5vw;
+}
+
+#box9{
+    background-image: url(https://babylone.fr/wp-content/uploads/2022/06/LOGOS_TALLANO.png);
+    background-size: cover;
+    position: relative;
+    top: 6.5vw;
+}
+
+#four{
+    width: 100%;
+    height: 65vw;
+    background-color: #eeeeee;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+}
+
+#fline{
+    width: 100%;
+    height: 5vw;
+    background-color: #f8ad67cf;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+    border: #1a1a2c solid 0.1vw;
+}
+
+#fline h1{
+    font-size: 1.5vw; 
+    text-transform: uppercase;
+    color: #1a1a2c;
+    display: inline-block;
+    margin-right:2.5vw ;
+}  
+
+#fline i{
+    margin-right: 2.1vw;
+    font-size: 1.2vw;
+}
+
+#fline::-webkit-scrollbar{
+    display: none;
+}
+
+#line2{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    animation-name: scroll;
+    animation-duration: 16s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: running;
+}
+
+#line2:hover{
+    cursor: pointer;
+}
+
+#fline:hover{
+    animation-play-state: paused;
+
+}
+
+@keyframes scroll{
+    100%{
+        transform: translateX(0);
+    }
+    0%{
+        transform: translateX(calc(-100% - 100px));
+    }
+}
+
+#fbox{
+    width: 94%;
+    height: 50vw;
+    margin-top: 6vw;
+    background-color: #eeeeee;
+    border: #000921 solid 0.1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+
+#fbline{
+    width: 100%;
+    height: 5.5vw;
+    border-top: #1a1a2c solid 0.1vw;
+    background-color: #f8ad6778;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#fbline h1{
+    font-size: 1.5vw; 
+    text-transform: uppercase;
+    color: #1a1a2c;
+    margin-right:2.5vw ;
+    animation-name: scroll;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    /* animation-play-state: running; */
+}  
+
+#fbline i{
+    margin-right: 2.1vw;
+    font-size: 1.2vw;
+}
+
+#fbline::-webkit-scrollbar{
+    display: none;
+}
+
+#fbline:hover{
+    background-color: #1a1a2c;
+    cursor: pointer;
+}
+
+#fbline:hover h1{
+    color: #fff;
+    animation-play-state: paused;
+}
+
+
+#finbox{
+    width: 100%;
+    height: 90%;
+}
+
+#fcircle1{
+    height: 2vw;
+    width: 2vw;
+    border-radius: 50%;
+    border: #1a1a2c solid 0.1vw;    
+    position: relative;
+    top: 2vw;
+    left: 2%;
+}
+
+#fcircle2{
+    height: 2vw;
+    width: 2vw;
+    border-radius: 50%;
+    border: #1a1a2c solid 0.1vw;    
+    position: relative;
+    top: 0.1vw;
+    left: 96%;
+}
+
+
+#p1{
+    position: relative;
+    top: -10%;
+    left: 52%;
+    transform: translate(-50%,-50%)rotate(-6deg);
+    width: 25vw;
+    height: 28vw;
+    z-index: 10;
+}
+
+#p2{
+    position: relative;
+    top: -70%;
+    left: 2%;
+    transform: rotate(5deg);
+    width: 10vw;
+    height: 13vw;
+}
+
+#p3{
+    position: relative;
+    top: -83%;
+    left: 22%;
+    transform: rotate(5deg);
+    width: 12vw;
+    height: 14vw;
+}
+
+#p4{
+    position: relative;
+    top: -30%;
+    left: -23%;
+    transform: rotate(-20deg);
+    width: 17vw;
+    height: 18vw;
+}
+
+#p5{
+    position: relative;
+    top: -30%;
+    left: -12%;
+    transform: rotate(7deg);
+    width: 13vw;
+    height: 15vw;
+}
+
+#p6{
+    position: relative;
+    top: -50%;
+    left: -30%;
+    transform: rotate(10deg);
+    width: 13vw;
+    height: 15vw;   
+    z-index: 9;
+}
+
+#notre{
+    position: relative;
+    top: 17.5%;
+    left: 1%;
+    font-size: 7vw;
+    color: #000921;
+}
+
+#equipe{
+    position: relative;
+    top: -91%;
+    left: 67%;
+    font-size: 7vw;
+    color: #000921;
+}
+
+#cpara{
+    position: relative;
+    top: -80%;
+    left: 72%;
+    font-size: 1.5vw;
+    font-weight: 500;
+    word-spacing: 0.4vw;
+    line-height: 1.5vw;
+    letter-spacing: 0.1vw;
+    color: #000921;
+}
+
+#five{
+    width: 100%;
+    height: 49vw;
+    background-color: #eeeeee;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+
+#ftline{
+    width: 100%;
+    height: 30vh;
+    border-bottom: 0.1vw solid #1a1a2c;
+    border-top: 0.1vw solid #1a1a2c;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+    z-index: 9;
+}
+
+#ftline::-webkit-scrollbar{
+    display: none;
+}
+
+#ftline>h1{
+    display: inline-block;
+    color: #D29380;
+    font-size: 12vw;
+    font-weight: 600;
+    margin-right: 10vw;
+    animation-name: scroll;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+
+#ftline .border{
+    -webkit-text-stroke-border: solid;
+    -webkit-text-stroke-width: 0.05px;
+    -webkit-text-stroke-color: #1a1a2c;
+    color: transparent;
+
+}
+
+#ftline:hover{
+    background-color: #1a1a2c;
+    cursor: pointer;
+}
+
+#ftline:hover h1{
+    color: #D29380;
+    animation-play-state: paused;
+}
+
+
+#ftbox{
+    width: 94vw;
+    height: 23vw;
+    margin-top: 5vw;
+    background-color: #D29380;
+    border: 0.1vw solid #1a1a2c;
+}
+
+#fttop{
+    width: 100%;
+    height: 4vw;
+    background-color: #D29380;
+    border-bottom: 0.1vw solid #1a1a2c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5vw;
+    font-weight: 100;
+    padding: 0% 1vw;
+    color: #000921;
+}
+
+#fttop h1{
+    font-size: 3vw;
+}
+
+#ftbottom{
+    padding: 0vw 2vw;
+    height: 82.5%;
+    color: #000921;
+}
+
+#ftbottom>h1{
+    position: relative;
+    top: 15%;
+    font-size: 13vw;
+}
+
+#ftbottom>h3{
+    position: relative;
+    top: -4.2vw;
+    left: 57vw;
+    font-size: 1vw;
+    letter-spacing: 0.1vw;
+}
+
+#ftbottom>svg{
+    position: relative;
+    top: -6vw;
+    left: 86.6vw;
+    width: 5vw;
+    height: 5vw;
+} 
+#arrow{
+    position: relative;
+    top: -110%;
+    left: 95%;
+}
+
+#ftbottom>svg{
+    position: relative;
+    top: -45%;
+    left: 85%;
+    width: 7vw;
+    height: 7vw;
+}
